@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'TurretRoad-ExtraBold';
+    src: url('../assets/fonts/TurretRoad-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TurretRoad-Bold';
+    src: url('../assets/fonts/TurretRoad-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TurretRoad-Regular';
+    src: url('../assets/fonts/TurretRoad-Regular.ttf') format('truetype');
+}
+
+html, body {
+    background-color: black;
+    font-family: 'TurretRoad-Regular', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    .faq-content {
+        font-family: 'TurretRoad-ExtraBold', sans-serif;
+    }
+    
+}
+
+.color-container-red {
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.color-container-frog {
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.faq-items {
+    @apply bg-Frog rounded-t-full md:rounded-tl-none pl-10 3xl:pt-6 3xl:text-3xl 3xl:pl-[290px] md:mr-52 3xl:mr-16 md:text-left md:pl-8 pt-2 h-10 3xl:h-20 lg:text-lg xl:text-xl
+}
+
+button {
+    font-family: 'TurretRoad-ExtraBold', sans-serif;
+}
+
+h1 {
+    font-family: 'TurretRoad-ExtraBold', sans-serif;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'TurretRoad-ExtraBold', sans-serif;
+}
+
+/* circle navbar animation */
+
+.circle:hover::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    border-radius: 50%;
+    left: -33px;
+    margin-right: 10px;
+    height: 22px;
+    width: 22px;
+    border: 7px solid #4DE84D;
+    animation: circle 200ms;
+}
+
+
+.circle-button:hover::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    border-radius: 50%;
+    left: 10px;
+    margin-right: 10px;
+    height: 22px;
+    width: 22px;
+    border: 7px solid #83439C;
+    animation: circle 200ms;
+}
+
+.circle-button-mint:hover::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    border-radius: 50%;
+    left: 30px;
+    margin-right: 10px;
+    height: 22px;
+    width: 22px;
+    border: 7px solid #83439C;
+    animation: circle 200ms;
+}
+
+
+@keyframes circle {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-height: 667px) {
+    #roadmap {
+        height: 300vh;
+    }
+    #faq {
+        height: 110vh;
+    }
+    #menu-mobile {
+        top: 0;
+    }
+}
+
+
+/* Autoscroll Animation */
+
+:root {
+    --no-of-slides: 13;
+    --slide-width: 150px;
+    --slide-height: 300px;
+    --iteration-time: 14s;
+  }
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(var(--slide-width) * var(--no-of-slides) * -1));
+    }
+}
+
+.slider {
+    display: flex;
+    gap: 50px;
+    animation: scroll var(--iteration-time) linear infinite;
+}
+
+.slider__wrapper::before {
+  background: linear-gradient(to right, rgba(201, 184, 184, 0.274) 0%, rgba(160, 7, 7, 0) 100%);
+  content: "";
+  height: 495px;
+  left: -160px;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+
+.slider__wrapper::after {
+    background: linear-gradient(to right, rgba(201, 184, 184, 0.274) 0%, rgba(160, 7, 7, 0) 100%);
+    content: "";
+    right: -160px;
+    bottom: -30px;
+    height: 495px;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+    transform: rotateZ(180deg);
+}
+
+/*  Blog Page */
+
+.adjacent-post .arrow-btn {
+    transition: width 300ms ease;
+    width: 50px;
+}
+.adjacent-post:hover .arrow-btn {
+    width: 60px;
+}
+.react-multi-carousel-list .arrow-btn {
+    transition: width 300ms ease;
+    width: 50px;
+}
+.react-multi-carousel-list .arrow-btn:hover {
+    width: 60px;
+}
+
+.text-shadow{
+    text-shadow: 0px 2px 0px rgb(0 0 0 / 30%);
+  }
+  
