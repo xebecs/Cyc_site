@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>CYC DAPP Website</title>
+        <title>Crypto Yoyo Club - NFT</title>
       </Head>
       <div className="overflow-x-hidden relative">
         <div className="hidden lg:flex lg:flex-col lg:gap-y-4 z-50 top-[600px] lg:left-6 lg:fixed">
