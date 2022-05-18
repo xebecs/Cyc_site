@@ -72,7 +72,7 @@ const Fans = () => {
                   xr-spatial-tracking-execution-while-out-of-viewport="true"
                   execution-while-not-rendered="true"
                   web-share="true"
-                  src="http://sketchfab.com/models/538c79269ef24145abaa19d33a6755ef/embed"
+                  src="https://sketchfab.com/models/538c79269ef24145abaa19d33a6755ef/embed"
                 ></iframe>
               </div>
             </div>
