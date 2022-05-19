@@ -125,9 +125,9 @@ h2 {
 
 :root {
     --no-of-slides: 13;
-    --slide-width: 150px;
+    --slide-width: 485px;
     --slide-height: 300px;
-    --iteration-time: 14s;
+    --iteration-time: 16s;
   }
 
 @keyframes scroll {
@@ -144,6 +144,13 @@ h2 {
     gap: 50px;
     animation: scroll var(--iteration-time) linear infinite;
 }
+
+.slider__wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: calc(2 * var(--no-of-slides));
+  }
 
 .slider__wrapper::before {
   background: linear-gradient(to right, rgba(201, 184, 184, 0.274) 0%, rgba(160, 7, 7, 0) 100%);
