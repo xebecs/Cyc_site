@@ -135,7 +135,7 @@ const Roadmap = () => {
               Easy
             </span>
             <p className="mt-2 lg:mt-6 lg:text-2xl text-justify w-[90%] leading-5 font-bold mx-auto">
-              Secure your investment by creating a DAO Treasurt of X Eth. Decide
+              Secure your investment by creating a DAO Treasurt of Y Eth. Decide
               with the club memebers how and where we shall use this fund after
               half of our collection is mint.
             </p>
