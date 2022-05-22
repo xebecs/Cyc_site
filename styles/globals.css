@@ -127,7 +127,7 @@ h2 {
     --no-of-slides: 13;
     --slide-width: 485px;
     --slide-height: 300px;
-    --iteration-time: 16s;
+    --iteration-time: 32s;
   }
 
 @keyframes scroll {
